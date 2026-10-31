@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>🗣️ Student Feedback</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="courses.html">🎓 Courses</a></li>
+            <li><a href="feedback.html">🗣️ Feedback</a></li>
+            <li><a href="grades.html">📈 Grades</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>Feedback Form</h2>
+
+        <form action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <fieldset>
+                <legend>How do you rate the course?</legend>
+
+                <input type="radio" id="good" name="rating" value="good" required>
+                <label for="good">Good</label>
+
+                <br>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+
+                <br>
+
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>What did you like?</legend>
+
+                <input type="checkbox" id="content" name="liked" value="content">
+                <label for="content">Course Content</label>
+
+                <br>
+
+                <input type="checkbox" id="teaching" name="liked" value="teaching">
+                <label for="teaching">Teaching</label>
+
+                <br>
+
+                <input type="checkbox" id="achievements" name="liked" value="achievements">
+                <label for="achievements">Achievements</label>
+            </fieldset>
+
+            <br>
+
+            <label for="comment">Write Your Feedback:</label>
+            <br><br>
+
+            <textarea id="comment" name="comment"
+                      rows="5" cols="35"
+                      placeholder="Write your feedback here..."
+                      required></textarea>
+
+            <br><br>
+
+            <label for="course">Choose Your Course:</label>
+
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="bca">BCA</option>
+                <option value="html">HTML</option>
+                <option value="dbms">DBMS</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
